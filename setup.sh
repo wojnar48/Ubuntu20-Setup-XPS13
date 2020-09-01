@@ -19,6 +19,9 @@ deb http://dell.archive.canonical.com/updates/ focal-somerville-melisa public
 # deb-src http://dell.archive.canonical.com/updates focal-somerville-melisa public
 EOF'
 
+# Added 8/31/20
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F9FDA6BED73CDC22
+
 sudo apt update -qq
 
 sudo apt install git htop lame net-tools flatpak audacity \
